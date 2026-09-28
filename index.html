@@ -140,8 +140,8 @@
           </article>
           <article class="step-card">
             <span>3</span>
-            <h3>Choose repeat</h3>
-            <p>Select None, Daily, Weekdays, Weekends, or Tomorrow from the repeat row.</p>
+            <h3>Choose repeat and category</h3>
+            <p>Select a repeat option, then use Category to group the task by focus, health, fun, self-care, learning, productivity, healthy eating, fitness, social, or other.</p>
           </article>
           <article class="step-card">
             <span>4</span>
@@ -150,9 +150,19 @@
           </article>
         </div>
         <figure class="wide-shot">
-          <img src="assets/screenshots/add-task-order.png" alt="Add a Task order sheet" />
-          <figcaption>The Add a Task sheet uses the same order-card artwork from the app.</figcaption>
+          <img src="assets/screenshots/add-task-categories.png" alt="Add a Task screen with category button" />
+          <figcaption>When adding a task, you can set the title, date, time, reminders, repeat option, and category.</figcaption>
         </figure>
+        <div class="mini-gallery" aria-label="Add task category screenshots">
+          <figure>
+            <img src="assets/screenshots/category-picker.png" alt="Task category picker showing category options" />
+            <figcaption>Use the category picker to organize your task before adding it.</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/screenshots/add-task-order.png" alt="Original Add a Task order sheet" />
+            <figcaption>The order sheet keeps the task flow visual and sushi-themed.</figcaption>
+          </figure>
+        </div>
       </section>
 
       <section class="section sushi-limit" aria-labelledby="daily-limit-title">
@@ -299,6 +309,10 @@
             <h3>Completed tasks</h3>
             <p>When you complete a task, its pending reminder is canceled so Chef does not remind you about finished work.</p>
           </article>
+          <article>
+            <h3>Chef alarm sounds</h3>
+            <p>Premium users can pick a Chef Alarm sound from the Profile screen for task reminders.</p>
+          </article>
         </div>
       </section>
 
@@ -313,17 +327,12 @@
           <ul class="check-list">
             <li>Use Premium to unlock the paid experience with one lifetime purchase.</li>
             <li>Scheduled task reminders are implemented from the task due date and repeat choice.</li>
-            <li>Chef notification sound assets exist in the project for a custom reminder sound.</li>
+            <li>Chef Alarm sound choices are available from the Profile screen for Premium users.</li>
             <li>Use Restore Purchases if you reinstall the app or move to a new device with the same Apple ID.</li>
           </ul>
-          <div class="callout caution">
-            Source check: task reminders are implemented, and Chef alarm MP3 files exist. The scanned
-            notification scheduler currently uses the default iOS sound, so publish custom-sound wording
-            only after the app build confirms that sound is wired in.
-          </div>
         </div>
         <div class="feature-card image-card">
-          <img src="assets/screenshots/premium-review.png" alt="Itadaki Task Premium screen" />
+          <img src="assets/screenshots/chef-alarm-picker.png" alt="Chef Alarm sound picker for Premium users" />
         </div>
       </section>
 
