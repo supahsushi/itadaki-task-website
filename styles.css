@@ -520,6 +520,42 @@ figcaption {
   max-width: 390px;
 }
 
+.profile-alarm-card {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(220px, 320px) minmax(0, 1fr);
+  align-items: center;
+  gap: 22px;
+  margin-top: -18px;
+  padding: 14px;
+  color: var(--ink);
+  background:
+    linear-gradient(135deg, rgba(112, 67, 38, 0.82), rgba(58, 32, 18, 0.94));
+  border: 1px solid rgba(255, 226, 181, 0.18);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.profile-alarm-card img {
+  width: 100%;
+  max-height: 520px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: var(--radius);
+  border: 10px solid var(--espresso);
+}
+
+.profile-alarm-card h3 {
+  color: #fff7e7;
+  font-size: clamp(1.35rem, 3vw, 2rem);
+}
+
+.profile-alarm-card p {
+  max-width: 680px;
+  margin-bottom: 0;
+  color: rgba(255, 239, 212, 0.82);
+}
+
 .support-list {
   grid-template-columns: repeat(4, 1fr);
 }
@@ -804,6 +840,11 @@ figcaption {
   .wide-shot,
   .profile-layout {
     grid-template-columns: 1fr;
+  }
+
+  .profile-alarm-card {
+    grid-template-columns: 1fr;
+    margin-top: 0;
   }
 
   .sushi-limit .section-copy {
