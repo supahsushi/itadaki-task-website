@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Itadaki Task Support</title>
+    <meta
+      name="description"
+      content="Tutorials, support, and FAQs for Itadaki Task, the cute sushi-themed iOS task app."
+    />
+    <link rel="icon" href="assets/icons/app-icon.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Itadaki Task home">
+        <img src="assets/icons/app-icon.png" alt="" />
+        <span>Itadaki Task</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Open menu</span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <a href="#start">Getting Started</a>
+        <a href="#works">How It Works</a>
+        <a href="#create">Creating A Task</a>
+        <a href="#screens">Screens</a>
+        <a href="#premium">Premium</a>
+        <a href="#faq">FAQ</a>
+        <a href="#support">Support</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Use</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Tutorial and Support</p>
+          <h1>Turn your tasks into tiny sushi wins.</h1>
+          <p>
+            Itadaki Task is a cheerful iOS task app where each completed order becomes sushi eaten at
+            the counter. This guide explains how the app works, what each screen means, and how to fix
+            common setup issues.
+          </p>
+          <div class="hero-actions" aria-label="Quick links">
+            <a class="button primary" href="#start">Learn the basics</a>
+            <a class="button secondary" href="#support">Contact support</a>
+          </div>
+        </div>
+        <div class="hero-phone" aria-label="Itadaki Task home screen preview">
+          <img src="assets/screenshots/home-profile.png" alt="Itadaki Task home and profile screen" />
+        </div>
+      </section>
+
+      <section class="intro-panel" aria-label="Core app summary">
+        <div>
+          <span class="stat">10</span>
+          <p>Maximum sushi a customer can eat each day.</p>
+        </div>
+        <div>
+          <span class="stat">18</span>
+          <p>Achievement badges track streaks, totals, categories, and big milestones.</p>
+        </div>
+        <div>
+          <span class="stat">13</span>
+          <p>Collection customers can be met as achievement rewards.</p>
+        </div>
+      </section>
+
+      <section id="start" class="section two-column">
+        <div class="section-copy">
+          <p class="eyebrow">Getting Started</p>
+          <h2>Welcome to the sushi counter</h2>
+          <p>
+            Itadaki Task turns your daily to-dos into sushi orders. You add a task, choose when it is
+            due, optionally repeat it, and let Chef remind you. When you finish the task, tap it on the
+            order board. The app marks it complete, counts one sushi eaten for the day, updates your
+            lifetime total, and checks whether you unlocked any achievements or customers.
+          </p>
+          <div class="callout">
+            <strong>Verified from the app:</strong>
+            completed tasks increase your daily sushi count, lifetime completions, best daily total,
+            category totals, and streak records.
+          </div>
+        </div>
+        <div class="feature-card image-card">
+          <img src="assets/screenshots/chef-morning.png" alt="Chef screen showing the task board" />
+        </div>
+      </section>
+
+      <section id="works" class="section wood-band" aria-labelledby="works-title">
+        <div class="section-heading">
+          <p class="eyebrow">How Itadaki Task Works</p>
+          <h2 id="works-title">Orders become progress</h2>
+          <p>
+            A task is saved with a title, due date, repeat option, reminder state, and completion state.
+            Completing it marks the order as eaten, increases today's sushi count, and updates your
+            streak and achievement progress.
+          </p>
+        </div>
+        <div class="feature-grid compact">
+          <article class="feature-card cream">
+            <h3>Task system</h3>
+            <p>Open orders are shown for today and sorted by due time so the next bite is easy to spot.</p>
+          </article>
+          <article class="feature-card cream">
+            <h3>Sushi count</h3>
+            <p>Each completed order adds one sushi, up to the daily 10-sushi meal limit.</p>
+          </article>
+          <article class="feature-card cream">
+            <h3>Rewards</h3>
+            <p>Totals, streaks, and categories feed achievements, and some achievements introduce collection customers.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="create" class="section" aria-labelledby="create-task-title">
+        <div class="section-heading">
+          <p class="eyebrow">Add A Task</p>
+          <h2 id="create-task-title">Create an order for Chef</h2>
+          <p>
+            Tap <strong>Add a Task</strong> from the home screen or Orders button. The order sheet lets
+            you write the task, set the date and time, and choose a repeat option.
+          </p>
+        </div>
+        <div class="steps-grid">
+          <article class="step-card">
+            <span>1</span>
+            <h3>Name the task</h3>
+            <p>Enter up to 60 characters, such as Drink water, Read a book, or Go for a walk.</p>
+          </article>
+          <article class="step-card">
+            <span>2</span>
+            <h3>Set date and time</h3>
+            <p>Use the date picker and time picker. The default time changes with the daypart.</p>
+          </article>
+          <article class="step-card">
+            <span>3</span>
+            <h3>Choose repeat</h3>
+            <p>Select None, Daily, Weekdays, Weekends, or Tomorrow from the repeat row.</p>
+          </article>
+          <article class="step-card">
+            <span>4</span>
+            <h3>Save the order</h3>
+            <p>Tap Add Task. The app schedules a reminder when notifications are allowed.</p>
+          </article>
+        </div>
+        <figure class="wide-shot">
+          <img src="assets/screenshots/add-task-order.png" alt="Add a Task order sheet" />
+          <figcaption>The Add a Task sheet uses the same order-card artwork from the app.</figcaption>
+        </figure>
+      </section>
+
+      <section class="section sushi-limit" aria-labelledby="daily-limit-title">
+        <div class="section-copy">
+          <p class="eyebrow">Daily Limit</p>
+          <h2 id="daily-limit-title">Completing tasks counts as eating sushi</h2>
+          <p>
+            Each completed task counts as one sushi. The daily counter tops out at
+            <strong>10 / 10</strong>. When the customer is full, the app switches to the thank-you
+            screen, hides the add-task area, and locked incomplete tasks cannot be completed until the
+            next daily reset.
+          </p>
+          <p>
+            One-time completed tasks are cleaned up after about 24 hours. Recurring tasks reopen on the
+            matching day: daily, weekdays, weekends, weekly, or the app's custom three-day recurrence.
+          </p>
+        </div>
+        <div class="feature-card image-card">
+          <img src="assets/screenshots/customer-full.png" alt="Your customer is full screen" />
+        </div>
+      </section>
+
+      <section id="screens" class="section" aria-labelledby="features-title">
+        <div class="section-heading">
+          <p class="eyebrow">Orders, Chef, Profile, Collection</p>
+          <h2 id="features-title">A quick tour of the app</h2>
+          <p>Use these sections when you need to explain a screen to a customer or check what a button does.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <h3>Home and Profile</h3>
+            <p>
+              The home/profile area shows the customer's avatar artwork, level, progress bar, current
+              streak, lifetime sushi eaten, badges, and customers met. Level progress is based on streak
+              milestones: 0, 1, 3, 7, 14, 30, 60, and 100 days.
+            </p>
+          </article>
+          <article class="feature-card">
+            <h3>Orders and Task List</h3>
+            <p>
+              Today's open tasks appear on the order board, sorted by due time. Tap an unfinished order
+              to complete it. Finished one-time tasks remain visible for today, then expire later.
+            </p>
+          </article>
+          <article class="feature-card">
+            <h3>Chef Screen</h3>
+            <p>
+              The Chef background changes by time of day: morning, noon, or night. When the customer is
+              full, Chef moves to the thank-you artwork.
+            </p>
+          </article>
+          <article class="feature-card">
+            <h3>Collection</h3>
+            <p>
+              Collection shows the sushi customers you have met. Locked customers show as mystery tiles.
+              Unlocked customers open a full-screen profile page with their art and first-met date.
+            </p>
+          </article>
+          <article class="feature-card">
+            <h3>Achievements</h3>
+            <p>
+              Achievements track totals, daily bests, streaks, and task categories. Tapping a badge shows
+              requirement, progress, unlock date, reward status, and any customer reward.
+            </p>
+          </article>
+          <article class="feature-card">
+            <h3>Customers Met</h3>
+            <p>
+              Some achievements introduce collection customers, such as Salmon for First Bite, Mama Roe
+              for Full Plate, Uni for Chef's Special, and Tuna for a 3-day streak.
+            </p>
+          </article>
+        </div>
+        <div class="gallery-strip" aria-label="Feature screenshots">
+          <img src="assets/screenshots/achievement-gachapon.png" alt="Achievement unlock screen" />
+          <img src="assets/screenshots/collection-tuna.png" alt="Collection character profile" />
+        </div>
+      </section>
+
+      <section id="profile-layout" class="section profile-layout" aria-labelledby="profile-layout-title">
+        <div class="section-copy">
+          <p class="eyebrow">Profile Layout</p>
+          <h2 id="profile-layout-title">Track your stats from My Profile</h2>
+          <p>
+            The Profile screen gathers your progress into one cozy sushi-board layout. It is the easiest
+            place to check how much you have done, how consistent you have been, and which rewards you
+            have already earned.
+          </p>
+          <div class="profile-stat-grid">
+            <article>
+              <h3>Avatar, name, and level</h3>
+              <p>Your avatar and customer name sit at the top with your current level and level progress.</p>
+            </article>
+            <article>
+              <h3>Sushi eaten today</h3>
+              <p>The top counter shows today's meal progress, such as 4 / 10 sushi eaten today.</p>
+            </article>
+            <article>
+              <h3>Current streak</h3>
+              <p>The streak panel shows how many days in a row you have completed at least one task.</p>
+            </article>
+            <article>
+              <h3>Lifetime sushi</h3>
+              <p>Total Sushi Eaten shows your lifetime task completions across the app.</p>
+            </article>
+            <article>
+              <h3>Badges earned</h3>
+              <p>The badge row previews unlocked achievements and shows progress out of 18 badges.</p>
+            </article>
+            <article>
+              <h3>Customers met</h3>
+              <p>The customer row previews collection characters and shows progress out of 13 customers.</p>
+            </article>
+          </div>
+        </div>
+        <div class="feature-card image-card profile-phone">
+          <img src="assets/screenshots/profile-layout.png" alt="My Profile screen showing Itadaki Task stats" />
+        </div>
+      </section>
+
+      <section class="section notifications" aria-labelledby="notifications-title">
+        <div class="section-heading">
+          <p class="eyebrow">Reminders</p>
+          <h2 id="notifications-title">Notifications and permission</h2>
+          <p>
+            Itadaki Task asks iOS for alert, badge, and sound permission when it schedules task
+            reminders. If permission is not granted, reminders cannot appear until notifications are
+            enabled in Settings.
+          </p>
+        </div>
+        <div class="support-list">
+          <article>
+            <h3>Enable notifications</h3>
+            <p>Open iPhone Settings, choose Notifications, select Itadaki Task, and turn on Allow Notifications.</p>
+          </article>
+          <article>
+            <h3>Reminder timing</h3>
+            <p>
+              One-time tasks remind at their exact date and time if that time is in the future. Daily,
+              weekday, weekend, and weekly reminders repeat at the selected time.
+            </p>
+          </article>
+          <article>
+            <h3>Completed tasks</h3>
+            <p>When you complete a task, its pending reminder is canceled so Chef does not remind you about finished work.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="premium" class="section two-column premium">
+        <div class="section-copy">
+          <p class="eyebrow">Premium</p>
+          <h2>Premium lifetime unlock</h2>
+          <p>
+            Premium is intended as a one-time lifetime unlock. The included review screenshot shows a
+            lifetime purchase flow and a restore option for people who already purchased.
+          </p>
+          <ul class="check-list">
+            <li>Use Premium to unlock the paid experience with one lifetime purchase.</li>
+            <li>Scheduled task reminders are implemented from the task due date and repeat choice.</li>
+            <li>Chef notification sound assets exist in the project for a custom reminder sound.</li>
+            <li>Use Restore Purchases if you reinstall the app or move to a new device with the same Apple ID.</li>
+          </ul>
+          <div class="callout caution">
+            Source check: task reminders are implemented, and Chef alarm MP3 files exist. The scanned
+            notification scheduler currently uses the default iOS sound, so publish custom-sound wording
+            only after the app build confirms that sound is wired in.
+          </div>
+        </div>
+        <div class="feature-card image-card">
+          <img src="assets/screenshots/premium-review.png" alt="Itadaki Task Premium screen" />
+        </div>
+      </section>
+
+      <section id="restore" class="section wood-band" aria-labelledby="restore-title">
+        <div class="section-heading">
+          <p class="eyebrow">Restore Purchases</p>
+          <h2 id="restore-title">Bring Premium back</h2>
+          <p>
+            If you already bought the lifetime unlock, open the Premium screen and choose Restore
+            Purchases while signed into the same Apple ID. This is the right path after reinstalling,
+            switching devices, or setting up a new iPhone.
+          </p>
+        </div>
+      </section>
+
+      <section id="faq" class="section faq" aria-labelledby="faq-title">
+        <div class="section-heading">
+          <p class="eyebrow">Troubleshooting</p>
+          <h2 id="faq-title">FAQ</h2>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>Why can't I add more tasks after 10 sushi?</summary>
+            <p>
+              Your customer is full for the day. The app intentionally stops the meal at 10 completed
+              tasks and reopens on the next daily reset.
+            </p>
+          </details>
+          <details>
+            <summary>Why did a recurring task come back?</summary>
+            <p>
+              Recurring tasks reopen when their repeat rule matches the day. Daily tasks reopen every
+              day, weekdays reopen Monday through Friday, weekends reopen Saturday and Sunday, and weekly
+              tasks reopen after at least seven days.
+            </p>
+          </details>
+          <details>
+            <summary>Why am I not getting reminders?</summary>
+            <p>
+              Check iOS notification permission first. Also make sure the task has a future date/time.
+              Completing a task cancels its reminder.
+            </p>
+          </details>
+          <details>
+            <summary>How do achievements unlock customers?</summary>
+            <p>
+              When an achievement with a customer reward unlocks, the app queues the achievement reveal
+              and then introduces the new customer in Collection.
+            </p>
+          </details>
+          <details>
+            <summary>How do I restore Premium?</summary>
+            <p>
+              Open the Premium screen and use Restore Purchases while signed into the same Apple ID used
+              for the original purchase.
+            </p>
+          </details>
+        </div>
+      </section>
+
+      <section id="support" class="section support" aria-labelledby="support-title">
+        <div class="support-card">
+          <p class="eyebrow">Contact</p>
+          <h2 id="support-title">Need help with Itadaki Task?</h2>
+          <p>
+            Send a short note with your device model, iOS version, what you expected to happen, and what
+            happened instead. Screenshots are helpful when the issue is visual.
+          </p>
+          <a class="button primary" href="mailto:bentulj4@gmail.com?subject=Itadaki%20Task%20Support">Email Support</a>
+        </div>
+      </section>
+
+      <section id="legal" class="section legal-section" aria-labelledby="legal-title">
+        <div class="section-heading">
+          <p class="eyebrow">Legal</p>
+          <h2 id="legal-title">Privacy Policy and Terms of Use</h2>
+          <p>
+            These pages are intentionally reserved for the legal documents we will create separately.
+          </p>
+        </div>
+        <div class="legal-grid">
+          <article class="legal-card">
+            <h3>Privacy Policy</h3>
+            <p>Read how Itadaki Task handles local task data, reminders, Health permission, purchases, and support emails.</p>
+            <a href="privacy.html">Open Privacy Policy</a>
+          </article>
+          <article class="legal-card">
+            <h3>Terms of Use</h3>
+            <p>Read the app usage terms, Apple EULA note, Premium lifetime unlock terms, and support boundaries.</p>
+            <a href="terms.html">Open Terms of Use</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <img src="assets/icons/app-icon.png" alt="" />
+        <p>Itadaki Task support and tutorials.</p>
+      </div>
+      <nav aria-label="Footer navigation">
+        <a href="#start">Tutorial</a>
+        <a href="#faq">FAQ</a>
+        <a href="#support">Support</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Use</a>
+      </nav>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
