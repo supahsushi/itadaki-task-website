@@ -489,7 +489,7 @@ figcaption {
 
 .profile-layout {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(280px, 0.72fr);
+  grid-template-columns: minmax(0, 1fr) minmax(210px, 300px) minmax(210px, 300px);
   align-items: center;
   gap: clamp(26px, 5vw, 64px);
   padding-top: 38px;
@@ -529,17 +529,14 @@ figcaption {
 }
 
 .profile-alarm-card {
-  grid-column: 1 / -1;
   display: grid;
-  grid-template-columns: minmax(220px, 320px) minmax(0, 1fr);
-  align-items: center;
-  gap: 22px;
-  margin-top: -18px;
-  padding: 14px;
+  align-self: stretch;
+  max-width: 390px;
+  padding: 10px;
   color: var(--ink);
   background:
-    linear-gradient(135deg, rgba(112, 67, 38, 0.82), rgba(58, 32, 18, 0.94));
-  border: 1px solid rgba(255, 226, 181, 0.18);
+    linear-gradient(180deg, rgba(255, 248, 236, 0.96), rgba(242, 212, 173, 0.96));
+  border: 1px solid rgba(255, 226, 181, 0.2);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
 }
@@ -547,22 +544,28 @@ figcaption {
 .profile-alarm-card img {
   width: 100%;
   aspect-ratio: var(--phone-shot-crop);
-  max-height: 520px;
   object-fit: cover;
-  object-position: center bottom;
+  object-position: center center;
   border-radius: var(--radius);
   border: 10px solid var(--espresso);
 }
 
+.profile-alarm-card div {
+  padding: 14px 8px 8px;
+}
+
 .profile-alarm-card h3 {
-  color: #fff7e7;
-  font-size: clamp(1.35rem, 3vw, 2rem);
+  color: var(--ink);
+  font-size: clamp(1.15rem, 2.4vw, 1.45rem);
 }
 
 .profile-alarm-card p {
-  max-width: 680px;
   margin-bottom: 0;
-  color: rgba(255, 239, 212, 0.82);
+  color: var(--soft-ink);
+}
+
+.premium .section-copy {
+  max-width: 820px;
 }
 
 .support-list {
